@@ -1,0 +1,101 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+  background-color: #ffffff; 
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-start;;
+  align-items: center;
+  background-color: #222; 
+  padding: 0 20px;
+  height: 60px;
+  border-radius: 0; 
+}
+
+
+nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+/* Efeito hover nos links */
+nav a:hover {
+  background-color: red;
+}
+
+
+.nav-left {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+
+.dropbtn {
+  cursor: pointer;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 200px;
+  z-index: 1;
+  flex-direction: column;
+}
+
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+.banner {
+  background-color: #007e3a; 
+  padding: 10px 0;
+  text-align: left;
+}
+
+.banner img {
+  height: 80px;
+  object-fit: contain;
+}
